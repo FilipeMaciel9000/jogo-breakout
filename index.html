@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Filipe Maciel" />
+    <meta name="description" content="Jogue Breakout no navegador" />
+    <meta
+      name="keywords"
+      content="breakout, jogo, arcade, diversão, navegador"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🟡&lt;/text&gt;&lt;/svg&gt;"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breakout</title>
+  </head>
+  <body>
+    <h1>Breakout</h1>
+    <div class="instructions">
+      <h2>Como Jogar:</h2>
+      <ul>
+        <li>Use as teclas de seta ← → para mover a plataforma</li>
+        <li>Clique e arraste no canvas para controlar com o mouse</li>
+        <li>Quebre todos os tijolos para vencer o jogo</li>
+        <li>Cada tijolo quebrado vale 1 ponto</li>
+        <li>Você tem 3 vidas - Não deixe a bola cair!</li>
+      </ul>
+    </div>
+    <br />
+    <section class="container">
+      <div class="score-container">
+        <div>Pontuação: <span id="score">0</span></div>
+        <div>Vidas: <span id="lives">3</span></div>
+      </div>
+
+      <canvas id="gameCanvas" width="480" height="400">
+        <!-- Aqui é onde o jogo será renderizado por JavaScript -->
+      </canvas>
+
+      <div class="controls">
+        <button id="startBtn">Iniciar</button>
+        <button id="pauseBtn">Pausar</button>
+        <button id="resetBtn">Reiniciar</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
